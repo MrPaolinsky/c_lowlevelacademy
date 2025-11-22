@@ -52,5 +52,10 @@ main ()
     challenge (&challengeNumber);
     printf ("%d\n", *challengeNumber);
 
+    free (challengeNumber);
+    challengeNumber = NULL;
+    free (first);
+    first = NULL;
+
     return 0;
 }
